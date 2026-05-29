@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso | Servicios Tecnológicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="reveal">
+    <div class="logo">
+        <img src="logo-st.png" alt="Servicios Tecnológicos ST">
+        <h1>Servicios Tecnológicos</h1>
+    </div>
+    <nav>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#galeria">Promociones</a>
+        <a href="index.html#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="panel reveal">
+    <h2 class="titulo">Acceso restringido</h2>
+
+    <div id="loginBox">
+        <input type="text" id="userLogin" placeholder="Usuario">
+        <input type="password" id="passLogin" placeholder="Contraseña">
+        <input type="password" id="codeLogin" placeholder="Código 2FA">
+        <button onclick="login()">Ingresar</button>
+        <p id="loginError"></p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración | Servicios Tecnológicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<script>
+if (localStorage.getItem("adminST") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+
+<section class="panel reveal">
+    <h2 class="titulo">Panel de Administración</h2>
+
+    <div id="panelAdmin">
+        <h3>Cargar nuevo producto</h3>
+
+        <form id="productoForm" class="panel-form">
+            <input type="text" id="imgUrl" placeholder="URL de la imagen" required>
+            <input type="text" id="nombreProd" placeholder="Nombre del producto" required>
+            <input type="text" id="precioProd" placeholder="Precio (ej: $150.000)" required>
+            <button type="submit">Agregar producto</button>
+        </form>
+
+        <h3>Productos cargados</h3>
+        <div id="galeriaGrid" class="galeria-grid"></div>
+
+        <h3>Registro de actividad</h3>
+        <div id="logBox" class="log-box"></div>
+        <button onclick="limpiarLogs()" class="logoutBtn">Limpiar historial</button>
+
+        <button class="logoutBtn" onclick="logout()">Cerrar sesión</button>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

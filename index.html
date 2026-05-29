@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Tecnológicos | Soluciones Digitales y Equipos Profesionales</title>
+
+    <meta name="description" content="Servicios Tecnológicos: sistemas de gestión, equipos gastronómicos, tecnología, IA, diseño web y posicionamiento en Google Maps en Corrientes.">
+    <meta name="keywords" content="servicios tecnológicos, sistemas de gestión, equipos gastronómicos, Corrientes, IA, diseño web, Google Maps">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0a3d91">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="reveal">
+    <div class="logo">
+        <img src="C:\Desarrolo web\LANDING MORETTI MAYO\COPILOT\v10\img\logost.png" alt="Servicios Tecnológicos ST">
+        <h1>Servicios Tecnológicos</h1>
+    </div>
+    <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Promociones</a>
+        <a href="#contacto">Contacto</a>
+        <a href="login.html">Acceso clientes</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <canvas id="heroCanvas"></canvas>
+
+    <div class="hero-content">
+        <h2>Soluciones Tecnológicas para Impulsar tu Negocio</h2>
+        <p>Equipos profesionales, servicios digitales y automatización con IA.</p>
+        <a href="https://wa.me/5493794000000" class="btn">Hablar por WhatsApp</a>
+    </div>
+</section>
+
+<section id="servicios" class="servicios reveal">
+    <h2 class="titulo">Servicios Profesionales</h2>
+    <div class="grid">
+        <div class="card"><h3>Google Maps</h3><p>Alta, verificación y optimización.</p></div>
+        <div class="card"><h3>Landing Pages</h3><p>Diseño responsive + SEO.</p></div>
+        <div class="card"><h3>Sistemas de Gestión</h3><p>Facturación, stock y reportes.</p></div>
+        <div class="card"><h3>Equipos Gastronómicos</h3><p>Freidoras, hornos, amasadoras.</p></div>
+        <div class="card"><h3>Equipos Tecnológicos</h3><p>Notebooks, PCs, impresoras.</p></div>
+        <div class="card"><h3>Bots IA</h3><p>Automatización 24/7.</p></div>
+    </div>
+</section>
+
+<section id="galeria" class="galeria reveal">
+    <h2 class="titulo">Promociones y Productos Destacados</h2>
+    <div class="galeria-grid" id="galeriaGrid"></div>
+</section>
+
+<section id="contacto" class="contacto reveal">
+    <h2 class="titulo">Contacto</h2>
+    <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="tel" placeholder="Teléfono" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar consulta</button>
+    </form>
+</section>
+
+<a href="https://wa.me/543794403781" class="whatsapp-business">
+    <img src="C:\Desarrolo web\LANDING MORETTI MAYO\COPILOT\v10\img\whatsapp-business.webp" alt="WhatsApp Business" >
+</a>
+
+
+
+<script src="script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+}
+</script>
+</body>
+</html>
